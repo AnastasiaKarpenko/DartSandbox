@@ -34,4 +34,10 @@ main(List<String> arguments) {
   int dogyears = 7;
   int dogage = age * dogyears;
   print('Your age in dog years is: ${dogage}');
+
+  // Strings
+  String hello = 'hello world';
+
+  String name = 'Anastasiia Karpenko';
+  print(name);
 }
