@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:async';
+import 'dart:collection'; //to import queueu
 
 enum colors { red, green, blue }
 
@@ -105,7 +106,7 @@ main(List<String> arguments) {
   numbers.add(3);
   // cannot add smth else than int here : numbers.add('cats');
 
-  //Sets are unordered and do not contain duplicates
+  //Sets (are unordered and do not contain duplicates)
 
   Set<int> numbers2 = new Set<int>();
   numbers2.add(1);
@@ -113,6 +114,13 @@ main(List<String> arguments) {
   numbers2.add(1); //added twice
   print(numbers2); // does not print the last int cause its added twice
 
+  //Queues (ordered, no index, add and remove from the start and end)
 
-
+  Queue items = new Queue();
+  items.add(1);
+  items.add(3);
+  items.add(2);
+  items.removeFirst();
+  items.removeLast();
+  print(items);
 }
