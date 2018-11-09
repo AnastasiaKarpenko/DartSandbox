@@ -214,4 +214,6 @@ main(List<String> arguments) {
       break;
     }
   } while (true);
+
+  print('finished');
 }
