@@ -46,6 +46,21 @@ main(List<String> arguments) {
   String firstname = name.substring(0, 10);
   print('firstname = ${firstname}');
 
+  //get the index of a string
+  int index = name.indexOf(' ');
+  String lastname = name.substring(index).trim();
+  print('lastname = ${lastname}');
 
+  //Length
+  print(name.length);
+
+  //Contains
+  print(name.contains('Ana'));
+
+  //Create a list
+  List parts = name.split(' ');
+  print(parts);
+  print(parts[0]);
+  print(parts[1]);
 
 }
