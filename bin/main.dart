@@ -1,7 +1,15 @@
 import 'dart:io';
 import 'dart:async';
 
+
+enum colors {red, green, blue}
+
 main(List<String> arguments) {
+
+  //Enums
+  print(colors.values);
+  print(colors.red);
+
   //Booleans
 
   bool isOn; //this is a variable, it is gonna change over time
@@ -79,5 +87,8 @@ main(List<String> arguments) {
   String newName = stdin.readLineSync();
 
   newName.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello ${name}\r\n');
+
+
+
 
 }
