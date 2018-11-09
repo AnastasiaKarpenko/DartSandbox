@@ -137,7 +137,7 @@ main(List<String> arguments) {
   print('Son is ${family['son']}');
   print('Daughter is ${family['daughter']}');
 
-  Map <String, String> myFamily = new Map<String, String>();
+  Map<String, String> myFamily = new Map<String, String>();
   myFamily.putIfAbsent('dad', () => 'Sergey');
   print('Dad is ${myFamily['dad']}');
   print('Mom is ${myFamily['mom']}');
@@ -148,4 +148,9 @@ main(List<String> arguments) {
   int age2 = 43;
   assert(age2 == 43);
   print('finished');
+
+  //if else
+  int age3 = 42;
+  if (age3 == 43) print('You are 43 years old');
+  if (age3 != 43) print('you are not 43 years old');
 }
