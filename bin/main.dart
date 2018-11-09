@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'dart:async';
+
 main(List<String> arguments) {
   //Booleans
 
@@ -63,13 +66,18 @@ main(List<String> arguments) {
   print(parts[0]);
   print(parts[1]);
 
-  //Const variables example
-  String hello = 'Hello';
+  //constant variables
+  String hello2 = 'Hello';
   const String world = 'World';
 
-  world = 'Anastasiia';
+  print (hello2 + ' ' + world);
 
-  print (hello + ' ' + world);
+  //Input and output example
 
+  stdout.write('What is your name?\r\n');
+
+  String newName = stdin.readLineSync();
+
+  newName.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello ${name}\r\n');
 
 }
