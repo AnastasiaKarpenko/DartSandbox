@@ -40,4 +40,12 @@ main(List<String> arguments) {
 
   String name = 'Anastasiia Karpenko';
   print(name);
+
+  //get a substring
+
+  String firstname = name.substring(0, 10);
+  print('firstname = ${firstname}');
+
+
+
 }
