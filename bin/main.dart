@@ -124,7 +124,12 @@ main(List<String> arguments) {
   print(items);
 
   //Maps = key value pair
-  Map family = {'dad' : 'Sergey', 'mom' : 'Marina', 'son' : 'Vasiliy', 'daughter' : 'Anastasiia'};
+  Map family = {
+    'dad': 'Sergey',
+    'mom': 'Marina',
+    'son': 'Vasiliy',
+    'daughter': 'Anastasiia'
+  };
   print('Keys are: ${family.keys}');
   print('Values are: ${family.values}');
   print('Dad is ${family['dad']}');
@@ -137,8 +142,10 @@ main(List<String> arguments) {
   print('Dad is ${myFamily['dad']}');
   print('Mom is ${myFamily['mom']}');
 
+  //Assertion
 
-
-
-
+  print('starting');
+  int age2 = 43;
+  assert(age2 == 43);
+  print('finished');
 }
