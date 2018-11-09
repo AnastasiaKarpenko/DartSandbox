@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:async';
-import 'dart:collection'; //to import queueu
+import 'dart:collection'; //to import queue
 
 enum colors { red, green, blue }
 
@@ -115,7 +115,6 @@ main(List<String> arguments) {
   print(numbers2); // does not print the last int cause its added twice
 
   //Queues (ordered, no index, add and remove from the start and end)
-
   Queue items = new Queue();
   items.add(1);
   items.add(3);
@@ -123,4 +122,21 @@ main(List<String> arguments) {
   items.removeFirst();
   items.removeLast();
   print(items);
+
+  //Maps = key value pair
+  Map family = {'dad' : 'Sergey', 'mom' : 'Marina', 'son' : 'Vasiliy', 'daughter' : 'Anastasiia'};
+  print('Keys are: ${family.keys}');
+  print('Values are: ${family.values}');
+  print('Dad is ${family['dad']}');
+  print('Mom is ${family['mom']}');
+  print('Son is ${family['son']}');
+  print('Daughter is ${family['daughter']}');
+
+  Map <String, String> myFamily = new Map<String, String>();
+  myFamily.putIfAbsent('dad', () => 'Sergey');
+  print('Dad is ${myFamily['dad']}');
+  print('Mom is ${myFamily['mom']}');
+
+
+
 }
