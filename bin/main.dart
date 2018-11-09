@@ -15,6 +15,9 @@ main(List<String> arguments) {
   isOn = true;
   print('isOn is a  ${isOn.runtimeType}');
 
-  
+  //Numbers
+  num age = 34;
+
+
 
 }
