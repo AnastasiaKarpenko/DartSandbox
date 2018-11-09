@@ -216,4 +216,12 @@ main(List<String> arguments) {
   } while (true);
 
   print('finished');
+
+  //For each (to know the index use int i=0; i<ppl.length; i++)
+
+  //Without knowing the index of p.
+  List ppl = ['Bryan', 'Heather', 'Chris'];
+  ppl.forEach((p) {
+    print(p);
+  });
 }
