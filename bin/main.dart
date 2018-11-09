@@ -1,11 +1,9 @@
 import 'dart:io';
 import 'dart:async';
 
-
-enum colors {red, green, blue}
+enum colors { red, green, blue }
 
 main(List<String> arguments) {
-
   //Enums
   print(colors.values);
   print(colors.red);
@@ -78,7 +76,7 @@ main(List<String> arguments) {
   String hello2 = 'Hello';
   const String world = 'World';
 
-  print (hello2 + ' ' + world);
+  print(hello2 + ' ' + world);
 
   //Input and output example
 
@@ -88,10 +86,9 @@ main(List<String> arguments) {
 //
 //  newName.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello ${name}\r\n');
 
-
   //Lists
 
-  List testList = [1,2,3,4];
+  List testList = [1, 2, 3, 4];
   print(testList);
   print(testList[0]);
   print('length is : ${testList.length}');
@@ -102,8 +99,10 @@ main(List<String> arguments) {
   things.add(true);
   print(things);
 
-
-
-
+  List<int> numbers = new List<int>();
+  numbers.add(1);
+  numbers.add(2);
+  numbers.add(3);
+  // cannot add smth else than int here : numbers.add('cats');
 
 }
