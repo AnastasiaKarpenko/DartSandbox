@@ -224,4 +224,25 @@ main(List<String> arguments) {
   ppl.forEach((p) {
     print(p);
   });
+
+  //Error handling
+
+  try {
+    int age10;
+    int dogYearsErr = 7;
+
+    if (dogYearsErr != 7) throw new Exception('dog years must be 7');
+
+    if (age10 == null) throw new NullThrownError();
+
+    print(age10 * dogYearsErr);
+  } on NullThrownError {
+    print('The value was null!');
+  } on NoSuchMethodError {
+    print('Sorry there is no such method');
+  } catch (e) {
+    print('Unknown error: ${e.toString()}');
+  } finally {
+    print('Completed');
+  }
 }
