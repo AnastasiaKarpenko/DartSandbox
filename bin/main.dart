@@ -22,5 +22,13 @@ main(List<String> arguments) {
   //Double
   double temp = 32.06;
 
+  //Parse Int
+
+  int test = int.parse('12');
+  print(test);
+
+  int err = int.parse('12.09', onError: (source) => 0);
+  print('err = ${err}');
+
 
 }
