@@ -1,6 +1,4 @@
-
 main(List<String> arguments) {
-
   //Booleans
 
   bool isOn; //this is a variable, it is gonna change over time
@@ -18,6 +16,11 @@ main(List<String> arguments) {
   //Numbers
   num age = 34;
 
+  //Int
+  int people = 6;
+
+  //Double
+  double temp = 32.06;
 
 
 }
