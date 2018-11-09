@@ -82,11 +82,26 @@ main(List<String> arguments) {
 
   //Input and output example
 
-  stdout.write('What is your name?\r\n');
+//  stdout.write('What is your name?\r\n');
+//
+//  String newName = stdin.readLineSync();
+//
+//  newName.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello ${name}\r\n');
 
-  String newName = stdin.readLineSync();
 
-  newName.isEmpty ? stderr.write('Name is empty') : stdout.write('Hello ${name}\r\n');
+  //Lists
+
+  List testList = [1,2,3,4];
+  print(testList);
+  print(testList[0]);
+  print('length is : ${testList.length}');
+
+  List things = new List(); //can put anything we want in this list
+  things.add(1);
+  things.add('cats');
+  things.add(true);
+  print(things);
+
 
 
 
