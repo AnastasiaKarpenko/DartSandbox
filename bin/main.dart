@@ -63,4 +63,13 @@ main(List<String> arguments) {
   print(parts[0]);
   print(parts[1]);
 
+  //Const variables example
+  String hello = 'Hello';
+  const String world = 'World';
+
+  world = 'Anastasiia';
+
+  print (hello + ' ' + world);
+
+
 }
