@@ -153,4 +153,29 @@ main(List<String> arguments) {
   int age3 = 42;
   if (age3 == 43) print('You are 43 years old');
   if (age3 != 43) print('you are not 43 years old');
+
+  //switch
+
+  int age4 = 50;
+
+  switch (age4) {
+    case 10:
+      print('You are young');
+      break;
+    case 30:
+      print('You are an adult');
+      break;
+    case 40:
+      print('You are 40');
+      break;
+    case 50:
+      print('You are exactly 50!');
+      break;
+    default:
+      print('Nothing specific about age');
+      break;
+  }
+  print('Switch finished');
+
+
 }
