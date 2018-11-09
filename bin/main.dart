@@ -177,5 +177,41 @@ main(List<String> arguments) {
   }
   print('Switch finished');
 
+  //Loops
 
+  int value;
+  int init = 1;
+  int max = 5;
+
+  value = init;
+
+  do {
+    print(value);
+    value++;
+  } while (value < max);
+  print('Done with the do loop');
+
+  while (value <= max) {
+    print(value);
+    value++;
+  }
+  print('Done with while loop');
+
+  //Infinite loop
+
+  value = init;
+  do {
+    print('value ${value}');
+    value++;
+
+    if (value == 3) {
+      print('value is 3');
+      continue;
+    }
+
+    if (value > 5) {
+      print('value is greater than 5');
+      break;
+    }
+  } while (true);
 }
