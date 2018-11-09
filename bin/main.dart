@@ -105,4 +105,14 @@ main(List<String> arguments) {
   numbers.add(3);
   // cannot add smth else than int here : numbers.add('cats');
 
+  //Sets are unordered and do not contain duplicates
+
+  Set<int> numbers2 = new Set<int>();
+  numbers2.add(1);
+  numbers2.add(2);
+  numbers2.add(1); //added twice
+  print(numbers2); // does not print the last int cause its added twice
+
+
+
 }
